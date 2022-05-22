@@ -1,14 +1,14 @@
 import React from 'react';
 import { StyleSheet, View, Text } from 'react-native';
 import { NavigationContainer } from '@react-navigation/native';
-// import { createStackNavigator } from '@react-navigation/stack';
+import { createStackNavigator } from '@react-navigation/stack';
 import { createDrawerNavigator } from '@react-navigation/drawer';
 
 import { drawerItemsMain } from './drawerItemsMain';
 import CustomDrawerContent from './CustomDrawerContent.js';
 import CustomHeader from './CustomHeader';
 
-// const Stack = createStackNavigator();
+const Stack = createStackNavigator();
 const Drawer = createDrawerNavigator();
 
 function HomeScreen() {
@@ -52,7 +52,7 @@ function MainDrawerNavigation() {
 const App = () => {
     return (
         <NavigationContainer>
-            {/* <Stack.Navigator
+            <Stack.Navigator
                 screenOptions={{
                     headerMode: 'screen',
                     headerTintColor: '#404554',
@@ -64,8 +64,8 @@ const App = () => {
                     },
                 }}>
                 <Stack.Screen name="MainDrawer" component={MainDrawerNavigation} />
-            </Stack.Navigator> */}
-            <MainDrawerNavigation />
+            </Stack.Navigator>
+            {/* <MainDrawerNavigation /> */}
         </NavigationContainer>
     );
 };
