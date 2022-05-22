@@ -4,13 +4,16 @@ import { NavigationContainer } from "@react-navigation/native";
 import { SafeAreaView, StyleSheet } from "react-native";
 import DrawerNavigation from "./src/navigation/DrawerNavigation";
 
+import App1 from "./src/prueba/App";
+
 const App = () => {
     return (
-        <NavigationContainer>
-            <DrawerNavigation />
-            {/* <SafeAreaView style={styles.body}>
-            </SafeAreaView> */}
-        </NavigationContainer>
+        // <NavigationContainer>
+        //     <DrawerNavigation />
+        //     {/* <SafeAreaView style={styles.body}>
+        //     </SafeAreaView> */}
+        // </NavigationContainer>
+        <App1 />
     );
 };
 
