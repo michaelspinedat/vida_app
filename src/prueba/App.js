@@ -7,6 +7,7 @@ import { createDrawerNavigator } from '@react-navigation/drawer';
 import { drawerItemsMain } from './drawerItemsMain';
 import CustomDrawerContent from './CustomDrawerContent.js';
 import CustomHeader from './CustomHeader';
+import Information from '../screens/Information';
 
 const Stack = createStackNavigator();
 const Drawer = createDrawerNavigator();
@@ -45,6 +46,7 @@ function MainDrawerNavigation() {
             <Drawer.Screen name="Home" component={HomeScreen} />
             <Drawer.Screen name="Settings1" component={Settings1Screen} />
             <Drawer.Screen name="Settings2" component={Settings2Screen} />
+            <Drawer.Screen name="2.1" component={Information} />
         </Drawer.Navigator>
     );
 }
@@ -65,7 +67,6 @@ const App = () => {
                 }}>
                 <Stack.Screen name="MainDrawer" component={MainDrawerNavigation} />
             </Stack.Navigator>
-            {/* <MainDrawerNavigation /> */}
         </NavigationContainer>
     );
 };

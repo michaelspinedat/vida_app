@@ -10,6 +10,7 @@ export const drawerItemsMain = [
         routes: [
             { nav: 'MainDrawer', routeName: 'Settings1', title: 'Settings 1' },
             { nav: 'MainDrawer', routeName: 'Settings2', title: 'Settings 2' },
+            { nav: 'MainDrawer', routeName: '2.1', title: '2.1' },
         ],
     },
 ];
