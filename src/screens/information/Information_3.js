@@ -1,5 +1,6 @@
 import React from 'react'
 import { ScrollView, StyleSheet, Text } from 'react-native'
+import Reader from '../../components/Reader';
 
 const Information_3 = () => {
 
@@ -38,6 +39,7 @@ Acciones para brindar ayuda y para estar atentos
     `;
     return (
         <ScrollView style={styles.body}>
+            <Reader text={text.split(" ").slice(0, 60).join(" ")} />
             <Text style={styles.text}>
                 {text}
             </Text>

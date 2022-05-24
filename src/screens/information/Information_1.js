@@ -1,5 +1,6 @@
 import React from 'react'
 import { ScrollView, StyleSheet, Text } from 'react-native'
+import Reader from '../../components/Reader';
 
 const Information_1 = () => {
 
@@ -26,6 +27,7 @@ También nos queda una reflexión crítica sobre el riesgo que representan las c
 
     return (
         <ScrollView style={styles.body}>
+            <Reader text={text.split(" ").slice(0, 60).join(" ")} />
             <Text style={styles.text}>
                 {text}
             </Text>

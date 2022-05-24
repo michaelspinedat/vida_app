@@ -1,5 +1,6 @@
 import React from 'react'
 import { ScrollView, Text, StyleSheet } from 'react-native'
+import Reader from '../components/Reader';
 
 const Education = () => {
 
@@ -19,6 +20,7 @@ Sin embargo, para lograr estas transformaciones es imprescindible llegar a un bu
 
     return (
         <ScrollView style={styles.body}>
+            <Reader text={text.split(" ").slice(0, 60).join(" ")} />
             <Text style={styles.text}>
                 {text}
             </Text>
@@ -30,8 +32,6 @@ const styles = StyleSheet.create({
 
     body: {
         flex: 1,
-        // alignItems: "center",
-        // justifyContent: "center",
         padding: 35
     },
 
