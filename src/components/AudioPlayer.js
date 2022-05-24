@@ -41,7 +41,6 @@ const AudioPlayer = ({ audioPath }) => {
                     temp.play(playComplete);
                 }
             });
-            console.log("TEMPPPPP")
             setMusic(temp);
         };
     }
@@ -94,8 +93,11 @@ const AudioPlayer = ({ audioPath }) => {
     }
 
     const stop = () => {
-        if (music)
+        if (music) {
             music.stop();
+            setCurrent(0);
+        }
+        setState('paused');
     }
 
     const getAudioTimeString = (seconds) => {
@@ -115,7 +117,7 @@ const AudioPlayer = ({ audioPath }) => {
                 </Button>
                 <Button onPress={pause} title="Pausar">
                 </Button>
-                <Button onPress={stop} title="Restart">
+                <Button onPress={stop} title="Reiniciar">
                 </Button>
 
 

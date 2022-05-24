@@ -6,17 +6,17 @@ import { styles } from '../resources/global';
 
 const Factors = () => {
 
-    const text = `Señales de alarma
-Me siento triste constantemente (depresión).
-Consumo o abuso de ciertas sustancias.
-Me siento ansioso sin saber el porqué, no hay una razón aparente.
-Tengo dificultad para conectarme emocionalmente con mis familiares, pares, amigos o con la pareja sentimental
-Siento que no rindo en el colegio o en la Universidad tanto como desearía y eso me hace sentir desmotivado.
-Me siento cómodo aislándome de los entornos sociales.
-He intentado suicidarme y soy conciente de ello.
-He me herido a mí mismo.
-No veo nada bueno en mí.
- Me frustra mi situación de discapacidad y eso me hace sentir mal.
+    const text = `Señales de alarma:
+- Me siento triste constantemente (depresión).
+- Consumo o abuso de ciertas sustancias.
+- Me siento ansioso sin saber el porqué, no hay una razón aparente.
+- Tengo dificultad para conectarme emocionalmente con mis familiares, pares, amigos o con la pareja sentimental
+- Siento que no rindo en el colegio o en la Universidad tanto como desearía y eso me hace sentir desmotivado.
+- Me siento cómodo aislándome de los entornos sociales.
+- He intentado suicidarme y soy conciente de ello.
+- He me herido a mí mismo.
+- No veo nada bueno en mí.
+- Me frustra mi situación de discapacidad y eso me hace sentir mal.
 No veo una razón aparente a mi existencia, no le encuentro sentido a mi vida.
 Siento que depende de los demás para sentirme bien conmigo mismo.
 La pérdida de mi familiar, amigo o mascota me ha afectado demasiado.

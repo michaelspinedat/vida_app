@@ -130,7 +130,7 @@ const styles = StyleSheet.create({
         height: 64,
     },
     drawerContainer: {
-        backgroundColor: '#222222',
+        backgroundColor: '#E36B2C',
     },
     container: {
         flex: 1,
@@ -152,7 +152,7 @@ const styles = StyleSheet.create({
         margin: 16,
         fontWeight: 'bold',
         color: '#F0F0F0',
-        textAlign: 'center',
+        textAlign: 'left',
     },
     backButtonRow: {
         flexDirection: 'row',

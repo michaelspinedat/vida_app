@@ -32,9 +32,10 @@ const Reader = ({ text }) => {
 const styles = StyleSheet.create({
     button: {
         alignItems: "center",
-        backgroundColor: "#B5B5B5",
+        backgroundColor: "#02AC66",
         padding: 10,
-        marginBottom: 15
+        marginBottom: 15,
+        alignSelf: "center"
     },
 
     buttonText: {
