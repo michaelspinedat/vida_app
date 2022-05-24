@@ -7,6 +7,7 @@ import {
     TouchableOpacity,
     SafeAreaView,
     Image,
+    BackHandler,
 } from 'react-native';
 
 function CustomDrawerContent(props) {
@@ -34,7 +35,7 @@ function CustomDrawerContent(props) {
         }
     };
 
-    const logOut = async () => console.log('log out');
+    const logOut = async () => BackHandler.exitApp();
 
     function renderMainDrawer() {
         return (
@@ -90,7 +91,7 @@ function CustomDrawerContent(props) {
             <View>
                 <TouchableOpacity onPress={logOut} testID="customDrawer-logout">
                     <View style={styles.parentItem}>
-                        <Text style={styles.title}>{'Log out'}</Text>
+                        <Text style={styles.title}>{'Salir'}</Text>
                     </View>
                 </TouchableOpacity>
             </View>

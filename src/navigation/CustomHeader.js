@@ -24,7 +24,7 @@ function CustomHeader(props) {
                     </TouchableOpacity>
                 </View>
                 <View style={styles.header}>
-                    <Text style={styles.headerTxt}>HEADER</Text>
+                    <Text style={styles.headerTxt}>VIDA APP</Text>
                 </View>
             </View>
         </SafeAreaView>

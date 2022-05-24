@@ -3,8 +3,8 @@ import { scheme } from "../resources/global";
 export const drawerItemsMain = [
     {
         key: 'Home',
-        title: 'Home',
-        routes: [{ nav: 'MainDrawer', routeName: 'Home', title: 'Home' }],
+        title: 'Inicio',
+        routes: [{ nav: 'MainDrawer', routeName: 'Home', title: 'Inicio' }],
     },
     {
         key: '1.0',
