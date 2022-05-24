@@ -1,10 +1,10 @@
 import React from 'react';
 import { ScrollView, StyleSheet, Text } from 'react-native';
+import { styles } from '../../resources/global';
 
 const Tools_2 = () => {
 
-    const text = `
-    5.2 ¿Qué debemos hacer cuando una persona regresa a casa después de un intento suicida? 
+    const text = `5.2 ¿Qué debemos hacer cuando una persona regresa a casa después de un intento suicida? 
     Tomar las recomendaciones dadas por los profesionales sanitarios. 
     No culpabilizar ni tomar represarías frente a lo ocurrido. 
     Identificar los medios que pueden generar riesgos para cometer de nuevo el acto. 
@@ -17,29 +17,13 @@ const Tools_2 = () => {
     `;
 
     return (
-        <ScrollView style={styles.body}>
+        <ScrollView style={styles.textContainer}>
             <Text style={styles.text}>
                 {text}
             </Text>
         </ScrollView>
     );
 };
-
-
-const styles = StyleSheet.create({
-
-    body: {
-        flex: 1,
-        // alignItems: "center",
-        // justifyContent: "center",
-        padding: 35
-    },
-
-    text: {
-        fontSize: 25,
-        textAlign: "justify"
-    }
-});
 
 
 export default Tools_2;

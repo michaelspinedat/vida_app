@@ -2,10 +2,11 @@ import React from 'react';
 import { StyleSheet, Text } from 'react-native';
 import { ScrollView } from 'react-native-gesture-handler';
 import AudioPlayer from '../components/AudioPlayer';
+import { styles } from '../resources/global';
 
 const Factors = () => {
-    const text = `
-    Señales de alarma
+
+    const text = `Señales de alarma
 Me siento triste constantemente (depresión).
 Consumo o abuso de ciertas sustancias.
 Me siento ansioso sin saber el porqué, no hay una razón aparente.
@@ -43,25 +44,11 @@ El hecho de haber vivido en un entorno marca por la guerra y la violencia me afe
     `;
 
     return (
-        <ScrollView style={styles.body}>
+        <ScrollView style={styles.textContainer}>
             <AudioPlayer audioPath={"factores.mp3"} />
             <Text style={styles.text}>{text}</Text>
         </ScrollView>
     )
 };
-
-const styles = StyleSheet.create({
-
-    body: {
-        flex: 1,
-        padding: 35
-    },
-
-    text: {
-        fontSize: 25,
-        textAlign: "justify"
-    }
-});
-
 
 export default Factors;

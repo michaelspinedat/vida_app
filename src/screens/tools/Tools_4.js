@@ -1,10 +1,10 @@
 import React from 'react';
 import { ScrollView, StyleSheet, Text } from 'react-native';
+import { styles } from '../../resources/global';
 
 const Tools_4 = () => {
 
-    const text = `
-    5.4 ¿Qué debemos hacer para ayudar a la familia después de que un ser querido ha  tenido un intento de suicidio?
+    const text = `5.4 ¿Qué debemos hacer para ayudar a la familia después de que un ser querido ha  tenido un intento de suicidio?
     Se debe generar un entorno de seguridad y confianza por parte de la familia, para que la persona se sienta apoyada y acogida en el seno familiar
     Fomentar las habilidades de comunicación familiar.
     Disminuir las situaciones que generen estrés y sobrecarga familiar.
@@ -21,29 +21,12 @@ const Tools_4 = () => {
     `;
 
     return (
-        <ScrollView style={styles.body}>
+        <ScrollView style={styles.textContainer}>
             <Text style={styles.text}>
                 {text}
             </Text>
         </ScrollView>
     );
 };
-
-
-const styles = StyleSheet.create({
-
-    body: {
-        flex: 1,
-        // alignItems: "center",
-        // justifyContent: "center",
-        padding: 35
-    },
-
-    text: {
-        fontSize: 25,
-        textAlign: "justify"
-    }
-});
-
 
 export default Tools_4;

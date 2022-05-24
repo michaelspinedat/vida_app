@@ -50,18 +50,15 @@ const AudioPlayer = ({ audioPath }) => {
     useEffect(() => {
 
         timeout.current = setInterval(() => {
-            console.log(music)
             if (music && music.isLoaded() && state === "playing" && !isEditing.current) {
-                
+
                 music.getCurrentTime((seconds, isPlaying) => {
                     current(seconds);
                 })
             }
         }, 500);
 
-
         return () => {
-            console.log("ADIÓS")
             if (music) {
                 music.release();
                 setMusic(null);
@@ -155,6 +152,7 @@ const styles = StyleSheet.create({
         flex: 1,
         flexDirection: "row",
         marginTop: 15,
+        marginBottom: 15
     },
 
     slider: {

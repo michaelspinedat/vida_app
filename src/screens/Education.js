@@ -1,11 +1,11 @@
 import React from 'react'
 import { ScrollView, Text, StyleSheet } from 'react-native'
 import Reader from '../components/Reader';
+import { styles } from '../resources/global';
 
 const Education = () => {
 
-    const text = `
-    La salud como producto social que se construye a partir de los aportes individuales y colectivos que responde a factores históricos, sociales, económico, políticos, ambientales entre otros, han hecho que ésta se tenga que abordar de manera integral, al tratar de comprender los fenómenos que la movilizan, delimitan y determinan. Es por esto que, son varias las estrategias que hoy en día resultan útiles para lograr una salud integral, como son las estrategias de promoción de la salud pero del mismo modo desde la prevención de la enfermedad, que por un lado necesitan estar direccionados a comprender dichos fenómenos sociales relacionados con la salud; para tratar de encontrar las posibles intervenciones e interacciones con la comunidad que permitan aumentar las capacidades institucionales, sociales, comunitarias, familiares y personales para afrontar la vida. Es así como desde la Salud Pública, se han implementado estrategias educativas y comunicativas basadas en los procesos de intercambio de saberes denominadas actualmente como: “Estrategias de Educación y Comunicación para la Salud”. (Ministerio de Salud y Protección Social. La ruta de la educación y comunicación para la salud, orientaciones para su aplicación estratégica (2014).
+    const text = `La salud como producto social que se construye a partir de los aportes individuales y colectivos que responde a factores históricos, sociales, económico, políticos, ambientales entre otros, han hecho que ésta se tenga que abordar de manera integral, al tratar de comprender los fenómenos que la movilizan, delimitan y determinan. Es por esto que, son varias las estrategias que hoy en día resultan útiles para lograr una salud integral, como son las estrategias de promoción de la salud pero del mismo modo desde la prevención de la enfermedad, que por un lado necesitan estar direccionados a comprender dichos fenómenos sociales relacionados con la salud; para tratar de encontrar las posibles intervenciones e interacciones con la comunidad que permitan aumentar las capacidades institucionales, sociales, comunitarias, familiares y personales para afrontar la vida. Es así como desde la Salud Pública, se han implementado estrategias educativas y comunicativas basadas en los procesos de intercambio de saberes denominadas actualmente como: “Estrategias de Educación y Comunicación para la Salud”. (Ministerio de Salud y Protección Social. La ruta de la educación y comunicación para la salud, orientaciones para su aplicación estratégica (2014).
 
 A partir de lo que el Ministerios de Salud y Protección Social de Colombia plantea, la educación y comunicación para la salud, indica que, “un proceso de construcción del conocimiento y aprendizaje mediante el dialogo de saberes, orientado al desarrollo y fortalecimiento del potencial y las potencialidades de las personas, las familias, las comunidades, las organizaciones y las redes para la promoción de la salud individual y colectiva, la gestión del riesgo y la transformación positiva de los diferentes entornos” (Ministerio de Salud y Protección Social (2016)), se hace necesario el identificar los actores que en materia de salud interactúan, incluyendo a la comunidad, el personal sanitario y de otros sectores de la sociedad.  
 
@@ -19,7 +19,7 @@ Sin embargo, para lograr estas transformaciones es imprescindible llegar a un bu
     `;
 
     return (
-        <ScrollView style={styles.body}>
+        <ScrollView style={styles.textContainer}>
             <Reader text={text.split(" ").slice(0, 60).join(" ")} />
             <Text style={styles.text}>
                 {text}
@@ -28,18 +28,7 @@ Sin embargo, para lograr estas transformaciones es imprescindible llegar a un bu
     )
 };
 
-const styles = StyleSheet.create({
 
-    body: {
-        flex: 1,
-        padding: 35
-    },
-
-    text: {
-        fontSize: 25,
-        textAlign: "justify"
-    }
-});
 
 
 

@@ -1,12 +1,11 @@
 import React from 'react'
 import { ScrollView, StyleSheet, Text } from 'react-native'
 import Reader from '../../components/Reader';
+import { styles } from '../../resources/global';
 
 const Information_3 = () => {
 
-    const text = `
-
-2.3 Algunos datos e información importante sobre el suicidio
+    const text = `2.3 Algunos datos e información importante sobre el suicidio
 
 2.3.1 Datos cuantitativos de interés
 
@@ -38,7 +37,7 @@ Acciones para brindar ayuda y para estar atentos
 
     `;
     return (
-        <ScrollView style={styles.body}>
+        <ScrollView style={styles.textContainer}>
             <Reader text={text.split(" ").slice(0, 60).join(" ")} />
             <Text style={styles.text}>
                 {text}
@@ -46,19 +45,5 @@ Acciones para brindar ayuda y para estar atentos
         </ScrollView>
     )
 }
-
-const styles = StyleSheet.create({
-
-    body: {
-        flex: 1,
-        padding: 35
-    },
-
-    text: {
-        fontSize: 25,
-        textAlign: "justify"
-    }
-});
-
 
 export default Information_3;

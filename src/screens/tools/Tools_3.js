@@ -1,10 +1,10 @@
 import React from 'react';
 import { ScrollView, StyleSheet, Text } from 'react-native';
+import { styles } from '../../resources/global';
 
 const Tools_3 = () => {
 
-    const text = `    
-    5.3 ¿Qué debemos hacer para ayudar a un familiar o amigo a enfrentarse a la muerte de un ser querido debido al suicidio?
+    const text = `5.3 ¿Qué debemos hacer para ayudar a un familiar o amigo a enfrentarse a la muerte de un ser querido debido al suicidio?
     Qué hacer
     
     No buscar culpables de lo sucedido ni hacer juicios de otras personas
@@ -22,29 +22,12 @@ const Tools_3 = () => {
     `;
 
     return (
-        <ScrollView style={styles.body}>
+        <ScrollView style={styles.textContainer}>
             <Text style={styles.text}>
                 {text}
             </Text>
         </ScrollView>
     );
 };
-
-
-const styles = StyleSheet.create({
-
-    body: {
-        flex: 1,
-        // alignItems: "center",
-        // justifyContent: "center",
-        padding: 35
-    },
-
-    text: {
-        fontSize: 25,
-        textAlign: "justify"
-    }
-});
-
 
 export default Tools_3;

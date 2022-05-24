@@ -1,5 +1,6 @@
 import React from 'react';
 import { ScrollView, StyleSheet, Text } from 'react-native';
+import { styles } from '../../resources/global';
 
 const Actions_2 = () => {
     const text = `
@@ -15,23 +16,10 @@ Mirar la ruta que se diseño para la UAM. (La va a revisar Jara-falta agregarla)
     `;
 
     return (
-        <ScrollView style={styles.body}>
+        <ScrollView style={styles.textContainer}>
             <Text style={styles.text}>{text}</Text>
         </ScrollView>
     )
 };
-
-const styles = StyleSheet.create({
-
-    body: {
-        flex: 1,
-        padding: 35
-    },
-
-    text: {
-        fontSize: 25,
-        textAlign: "justify"
-    }
-});
 
 export default Actions_2;

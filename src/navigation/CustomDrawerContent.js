@@ -10,6 +10,8 @@ import {
     BackHandler,
 } from 'react-native';
 
+import logo from "../assets/imgs/logo.png";
+
 function CustomDrawerContent(props) {
     const [mainDrawer, setMainDrawer] = useState(true);
     const [filteredItems, setFilteredItems] = useState([]);
@@ -105,7 +107,7 @@ function CustomDrawerContent(props) {
                 forceInset={{ top: 'always', horizontal: 'never' }}>
                 <View style={styles.centered}>
                     <Image
-                        source={{ uri: 'https://reactjs.org/logo-og.png' }}
+                        source={logo}
                         style={styles.logo}
                     />
                 </View>
@@ -124,8 +126,8 @@ const styles = StyleSheet.create({
         alignItems: 'center',
     },
     logo: {
-        width: 100,
-        height: 75,
+        width: 64,
+        height: 64,
     },
     drawerContainer: {
         backgroundColor: '#222222',
@@ -136,6 +138,7 @@ const styles = StyleSheet.create({
     },
     centered: {
         alignItems: 'center',
+        justifyContent: "center"
     },
     parentItem: {
         flexDirection: 'row',

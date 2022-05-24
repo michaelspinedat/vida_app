@@ -1,11 +1,11 @@
 import React from 'react'
 import { ScrollView, StyleSheet, Text } from 'react-native'
 import Reader from '../../components/Reader';
+import { styles } from '../../resources/global';
 
 const Information_2 = () => {
 
-    const text = `
-2.2 Mito y creencias sobre el suicidio.
+    const text = `2.2 Mito y creencias sobre el suicidio.
 
 El que se quiere matar no lo dice: criterio equivocado, pues conduce a no prestar atención a las personas que manifiestan sus ideas suicidas o amenazan con suicidarse. El criterio científico indica que de cada 10 personas que se suicidan, nueve de ellas manifestaron, claramente, sus propósitos y la otra dejo entre ver sus intenciones de acabar con su vida.
 
@@ -34,7 +34,7 @@ Los medios de comunicación no pueden contribuir a la prevención del suicidio: 
 
 
     return (
-        <ScrollView style={styles.body}>
+        <ScrollView style={styles.textContainer}>
             <Reader text={text.split(" ").slice(0, 60).join(" ")} />
             <Text style={styles.text}>
                 {text}
@@ -42,19 +42,5 @@ Los medios de comunicación no pueden contribuir a la prevención del suicidio: 
         </ScrollView>
     )
 }
-
-const styles = StyleSheet.create({
-
-    body: {
-        flex: 1,
-        padding: 35
-    },
-
-    text: {
-        fontSize: 25,
-        textAlign: "justify"
-    }
-});
-
 
 export default Information_2;

@@ -23,7 +23,7 @@ const Reader = ({ text }) => {
             style={styles.button}
             onPress={read}
         >
-            <Text> {isPlaying ? "Detener" : "Leer"}  </Text>
+            <Text style={styles.buttonText}> {isPlaying ? "Detener" : "Leer"}  </Text>
         </TouchableOpacity>
 
     )
@@ -33,8 +33,13 @@ const styles = StyleSheet.create({
     button: {
         alignItems: "center",
         backgroundColor: "#B5B5B5",
-        padding: 10
+        padding: 10,
+        marginBottom: 15
     },
+
+    buttonText: {
+        fontSize: 20
+    }
 });
 
 export default Reader;

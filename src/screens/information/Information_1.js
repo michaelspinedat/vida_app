@@ -1,12 +1,11 @@
 import React from 'react'
 import { ScrollView, StyleSheet, Text } from 'react-native'
 import Reader from '../../components/Reader';
+import { styles } from '../../resources/global';
 
 const Information_1 = () => {
 
-    const text = `
-    
-    2.1 ¿Qué es el suicidio? 
+    const text = `2.1 ¿Qué es el suicidio? 
 La Organización Mundial de la Salud define el suicidio como “un fenómeno multideterminado” (OMS, 2018). Los fenómenos multideterminados exigen que todas las ciencias, disciplinas y campos profesionales renuncien a sus pretensiones de brindar explicaciones e intervenciones totalizantes y nos invitan al diálogo interdisciplinario para comprender e intervenir los fenómenos. Decir que un fenómeno es multideterminado es también una orientación fundamental para la acción, en la medida en que nos permite tomar decisiones sobre cuáles son aquellas determinaciones sobre las que podemos incidir y cuáles están por fuera de nuestro campo de influencia. 
 Es decir, si admitimos desde el comienzo las limitaciones de nuestros esfuerzos, podemos focalizar y maximizar el impacto de nuestra incidencia en alguna o algunas determinaciones específicas del fenómeno, renunciando, de antemano, a la ilusión de ser infalibles; con lo cual, estamos contribuyendo, desde una perspectiva científica y técnica, la comprensión e intervención del fenómeno, admitiendo, de antemano, que los alcances de nuestros esfuerzos tienen un límite y que, por lo tanto, no podemos tener una certeza plena del resultado de los mismos.
 Es precisamente este carácter multideterminado del fenómeno del suicidio el que justifica que se haya creado, en los años setenta del siglo XX, un campo específico para su estudio e intervención que se llama la suicidología y que este se defina, precisamente, como un campo interdisciplinario en el que se dialoga desde la psicología con las demás disciplinas para la construcción de comprensiones e intervenciones pertinentes. La psicología sirve, por así decirlo, de enlace o puente para que se realice la interlocución de todas las demás disciplinas para la construcción de una.
@@ -26,7 +25,7 @@ También nos queda una reflexión crítica sobre el riesgo que representan las c
 
 
     return (
-        <ScrollView style={styles.body}>
+        <ScrollView style={styles.textContainer}>
             <Reader text={text.split(" ").slice(0, 60).join(" ")} />
             <Text style={styles.text}>
                 {text}
@@ -34,19 +33,5 @@ También nos queda una reflexión crítica sobre el riesgo que representan las c
         </ScrollView>
     )
 }
-
-const styles = StyleSheet.create({
-
-    body: {
-        flex: 1,
-        padding: 35
-    },
-
-    text: {
-        fontSize: 25,
-        textAlign: "justify"
-    }
-});
-
 
 export default Information_1;

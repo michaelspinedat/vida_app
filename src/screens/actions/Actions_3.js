@@ -1,10 +1,9 @@
 import React from 'react';
 import { ScrollView, StyleSheet, Text } from 'react-native';
+import { styles } from '../../resources/global';
 
 const Actions_3 = () => {
-    const text = `
-
-    4.3 ¿Qué puedo hacer? Consejos ante un pensamiento suicida
+    const text = `4.3 ¿Qué puedo hacer? Consejos ante un pensamiento suicida
 
     No decidas nada ahora, tomate un tiempo 
     Las cosas cambian ha si tu no lo creas, todo es transitorio y temporal. 
@@ -21,23 +20,10 @@ const Actions_3 = () => {
     `;
 
     return (
-        <ScrollView style={styles.body}>
+        <ScrollView style={styles.textContainer}>
             <Text style={styles.text}>{text}</Text>
         </ScrollView>
     )
 };
-
-const styles = StyleSheet.create({
-
-    body: {
-        flex: 1,
-        padding: 35
-    },
-
-    text: {
-        fontSize: 25,
-        textAlign: "justify"
-    }
-});
 
 export default Actions_3;
