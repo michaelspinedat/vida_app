@@ -1,14 +1,22 @@
 import 'react-native-gesture-handler';
-import React from "react";
+import React, { useEffect } from "react";
 import { NavigationContainer } from "@react-navigation/native";
 import { createStackNavigator } from '@react-navigation/stack';
 import DrawerNavigation from "./src/navigation/DrawerNavigation";
 import CustomHeader from './src/navigation/CustomHeader';
 import { StyleSheet } from 'react-native';
+import SplashScreen from 'react-native-splash-screen'
 
 const Stack = createStackNavigator();
 
+
 const App = () => {
+
+    useEffect(() => {
+        SplashScreen.hide();
+    }, [])
+
+
     return (
         <NavigationContainer>
             <Stack.Navigator

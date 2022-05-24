@@ -13,6 +13,7 @@ import com.vida_app.newarchitecture.MainApplicationReactNativeHost;
 import java.lang.reflect.InvocationTargetException;
 import java.util.List;
 import com.swmansion.reanimated.ReanimatedPackage;
+import org.devio.rn.splashscreen.SplashScreenReactPackage;
 
 public class MainApplication extends Application implements ReactApplication {
 
@@ -29,6 +30,7 @@ public class MainApplication extends Application implements ReactApplication {
             // Packages that cannot be autolinked yet can be added manually here, for
             // example:
             // packages.add(new MyReactNativePackage());
+            // packages.add(new SplashScreenReactPackage());
             return packages;
         }
 
