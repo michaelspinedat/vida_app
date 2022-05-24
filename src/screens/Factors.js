@@ -1,6 +1,7 @@
 import React from 'react';
 import { StyleSheet, Text } from 'react-native';
 import { ScrollView } from 'react-native-gesture-handler';
+import AudioPlayer from '../components/AudioPlayer';
 
 const Factors = () => {
     const text = `
@@ -43,6 +44,7 @@ El hecho de haber vivido en un entorno marca por la guerra y la violencia me afe
 
     return (
         <ScrollView style={styles.body}>
+            <AudioPlayer audioPath={"factores.mp3"} />
             <Text style={styles.text}>{text}</Text>
         </ScrollView>
     )
