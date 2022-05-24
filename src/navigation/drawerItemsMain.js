@@ -60,4 +60,9 @@ export const drawerItemsMain = [
         title: scheme["7.0"],
         routes: [{ nav: 'MainDrawer', routeName: '7.0', title: scheme["7.0"] }],
     },
+    {
+        key: 'config',
+        title: "Configuración narrador",
+        routes: [{ nav: 'MainDrawer', routeName: 'config', title: "Configuración narrador" }],
+    },
 ];

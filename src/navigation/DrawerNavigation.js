@@ -20,6 +20,8 @@ import Strategies_2 from '../screens/strategies/Strategies_2';
 import Strategies_3 from '../screens/strategies/Strategies_3';
 import Strategies_4 from '../screens/strategies/Strategies_4';
 import Emotions from '../screens/Emotions';
+import ReaderConfig from '../components/ReaderConfig';
+import Home from '../screens/Home';
 
 const Drawer = createDrawerNavigator();
 
@@ -30,7 +32,7 @@ const DrawerNavigation = () => {
             drawerContent={(props) => (
                 <CustomDrawerContent drawerItems={drawerItemsMain} {...props} />
             )}>
-            <Drawer.Screen name="Home" component={Education} />
+            <Drawer.Screen name="Home" component={Home} />
             <Drawer.Screen name="1.0" component={Education} />
             <Drawer.Screen name="2.1" component={Information_1} />
             <Drawer.Screen name="2.2" component={Information_2} />
@@ -49,6 +51,7 @@ const DrawerNavigation = () => {
             <Drawer.Screen name="6.3" component={Strategies_3} />
             <Drawer.Screen name="6.4" component={Strategies_4} />
             <Drawer.Screen name="7.0" component={Emotions} />
+            <Drawer.Screen name="config" component={ReaderConfig} />
         </Drawer.Navigator>
     );
 };

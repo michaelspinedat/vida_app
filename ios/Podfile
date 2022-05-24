@@ -19,6 +19,10 @@ target 'vida_app' do
     :app_path => "#{Pod::Config.instance.installation_root}/.."
   )
 
+  pod 'TextToSpeech', :path => '../node_modules/react-native-tts'
+
+  pod 'react-native-slider', :path => '../node_modules/@react-native-community/slider'
+
   target 'vida_appTests' do
     inherit! :complete
     # Pods for testing

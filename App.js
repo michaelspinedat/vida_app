@@ -6,7 +6,9 @@ import DrawerNavigation from "./src/navigation/DrawerNavigation";
 import CustomHeader from './src/navigation/CustomHeader';
 import { StyleSheet } from 'react-native';
 import SplashScreen from 'react-native-splash-screen'
+import { LogBox } from 'react-native';
 
+LogBox.ignoreAllLogs();//Ignore all log notifications
 const Stack = createStackNavigator();
 
 
@@ -14,8 +16,7 @@ const App = () => {
 
     useEffect(() => {
         SplashScreen.hide();
-    }, [])
-
+    }, []);
 
     return (
         <NavigationContainer>
